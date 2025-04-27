@@ -1,21 +1,17 @@
+//Faça um programa que leia dois números inteiros e depois os imprima na ordem inversa
+//em que eles foram lidos.
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    int num1, num2;
+int main(){
 
-    printf("Digite o primeiro número inteiro: ");
-    scanf("%d", &num1); // Lê o primeiro número inteiro
+    int x,y;
+    
+    printf("Digite dois valores: ");
+    scanf("%d %d", &x, &y);
 
-    printf("Digite o segundo número inteiro: ");
-    scanf("%d", &num2); // Lê o segundo número inteiro
-
-    printf("\nNúmeros na ordem inversa de leitura:\n"); // Lê os números na ordem inversa
-    printf("%d\n", num2);
-    printf("%d\n", num1);
-
-    system("pause");
+    printf("Os valores sao: %d %d", y, x);
 
     return 0;
 }

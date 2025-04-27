@@ -1,3 +1,8 @@
+/*Faça um programa que receba a altura e o sexo de uma pessoa e calcule e mostre
+seu peso ideal, utilizando as seguintes fórmulas (em que “h” corresponde à altura):
+• Homens: (72,7 * h) – 58
+• Mulheres: (62,1 * h) – 44,7*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,7 +12,7 @@ int main()
     int genero; 
     float ideal;
 
-    printf("Digite sua altura: \n");
+    printf("Digite sua altura: ");
     scanf("%f", &altura);
 
     printf("Escolha seu sexo:\n1 - Masculino\n2 - Feminino\n");
@@ -27,10 +32,8 @@ int main()
 
     else // Caso contrário
     {
-        printf("Opção de gênero inválida.\n");
+        printf("Opcao de genero invalida.\n");
     }
-
-    system("pause");
 
     return 0;
 }

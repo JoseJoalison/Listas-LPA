@@ -1,16 +1,17 @@
+//Faça um programa que leia um caractere do tipo char e depois o imprima entre aspas
+//duplas. Assim, se o caractere lido for a letra A, deverá ser impresso “A”.
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    char char1;
+int main(){
 
-    printf("Digite um caractere: ");
-    scanf("%c", &char1); // Lê um caractere do usuário
+    char x;
 
-    printf("Caractere lido entre aspas duplas: \"%c\" \n", char1); // Exibe o caractere lido entre aspas duplas
-  
-    system("pause");
+    printf("Digite o caractere: %c", x);
+    scanf("%c", &x);
+
+    printf("Cararctere com \": \"%c\"", x);
 
     return 0;
 }

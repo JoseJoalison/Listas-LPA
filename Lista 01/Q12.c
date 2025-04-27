@@ -1,13 +1,14 @@
+//Elabore um programa que contenha uma constante qualquer do tipo int. Use o
+//comando const. Imprima essa constante
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    const int num = 10; // Define uma constante NUMERO com o valor 10
+int main(){
 
-    printf("Valor da constante: %d\n", num); // Imprime o valor da constante
-   
-    system("pause");
+    const int pizza = 31412;
 
-    return 0;    
+    printf("Quantidade de pizza: %d", pizza);
+
+    return 0;
 }

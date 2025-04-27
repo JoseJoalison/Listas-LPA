@@ -1,24 +1,27 @@
+/*Escreva um programa que leia certa quantidade de números, imprima o maior
+deles e quantas vezes o maior número foi lido. A quantidade de números a
+serem lidos deve ser fornecida pelo usuário.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
 int main()
 {
-    int quantidade, numero;
+    int quantidade, numero, i;
     int maior, contador = 0;
 
-    printf("Quantos números você deseja digitar? ");
+    printf("Quantos numeros voce deseja digitar? ");
     scanf("%d", &quantidade);
 
     if (quantidade <= 0) // Verifica se a quantidade é maior que 0
     {
-        printf("Por favor, digite uma quantidade válida (maior que 0).\n");
-        return 1;
+        printf("Por favor, digite uma quantidade valida (maior que 0).\n");
     }
 
-    for (int i = 1; i <= quantidade; i++) // Loop de 1 até a quantidade digitada
+    for ( i = 1; i <= quantidade; i++) // Loop de 1 até a quantidade digitada
     {
-        printf("Digite o %dº número: ", i);
+        printf("Digite o %d* numero: ", i);
         scanf("%d", &numero);
 
         if (i == 1) // Primeiro número lido
@@ -42,10 +45,8 @@ int main()
         }
     }
 
-    printf("\nO maior número lido foi: %d\n", maior);
-    printf("O maior número apareceu %d vez(es).\n", contador);
-
-    system("pause");
+    printf("\nO maior numero lido foi: %d\n", maior);
+    printf("O maior numero apareceu %d vez(es).\n", contador);
 
     return 0;
 }

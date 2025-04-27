@@ -1,22 +1,23 @@
+//Escreva um programa que leia três variáveis: char, int e float. Em seguida, imprima-as
+//de três maneiras diferentes: separadas por espaços, por uma tabulação horizontal e uma
+//em cada linha. Use um único comando printf() para cada operação de escrita das três
+//
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    char caractere;
-    int inteiro;
-    float flutuante;
+int main(){
 
-    printf("Digite um caractere, um inteiro e um número de ponto flutuante (separados por espaço): \n"); // 
-    scanf("%c %d %f", &caractere, &inteiro, &flutuante);
+    char x;
+    int y;
+    float z;
 
-    printf("\nImpressão separada por espaços: %c %d %.2f\n", caractere, inteiro, flutuante); // Imprime os valores separados por espaços
+    printf("Digite os caracteres: ");
+    scanf("%c %d %f", &x, &y, &z);
 
-    printf("Impressão separada por tabulação horizontal:\t%c\t%d\t%.2f\n", caractere, inteiro, flutuante); // Imprime os valores separados por tabulação horizontal
-
-    printf("Impressão em linhas separadas:\n%c\n%d\n%.2f\n", caractere, inteiro, flutuante); // Imprime os valores em linhas separadas
-
-    system("pause");
+    printf("Caracteres por espaco:%c %d %f\n", x, y, z);
+    printf("Caracteres por tabulacao:%c\t%d\t%f\t\n", x, y, z);
+    printf("Caracteres por linha:\n%c\n%d\n%f\n", x, y, z);
 
     return 0;
-} 
+}

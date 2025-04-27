@@ -1,3 +1,6 @@
+/*Faça um programa que receba um número inteiro maior do que 1 e verifique se
+o número fornecido é primo ou não.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -7,13 +10,13 @@ int main()
     int numero, i;
     int primo = 1;  // Suponha que o número é primo
 
-    printf("Digite um número inteiro maior que 1: ");
+    printf("Digite um numero inteiro maior que 1: ");
     scanf("%d", &numero);
 
     if (numero <= 1) // Verifica se o número é menor ou igual a 1
     {
-        printf("Por favor, digite um número maior que 1.\n");
-        return 1;  // Encerra o programa se o número for menor ou igual a 1
+        printf("Por favor, digite um numero maior que 1.\n");
+        return 0;
     }
 
     for (i = 2; i <= numero / 2; i++) // Verifica até a metade do número
@@ -27,15 +30,13 @@ int main()
 
     if (primo == 1) // Se primo for 1, o número é primo
     {
-        printf("O número %d é primo.\n", numero);
+        printf("O numero %d e primo.\n", numero);
     }
 
     else // Caso contrário
     {
-        printf("O número %d não é primo.\n", numero);
+        printf("O numero %d nao e primo.\n", numero);
     }
-
-    system("pause");
     
     return 0;
 }

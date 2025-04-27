@@ -1,13 +1,12 @@
+//Elabore um programa que contenha uma constante qualquer do tipo float. Use o
+//comando #define. Imprima essa constante.
+
 #include <stdio.h>
 #include <stdlib.h>
+#define constante 263.9
+int main(){
 
-#define PI 3.14 // Define uma constante PI com o valor 3.14
-
-int main()
-{
-    printf("Valor de PI: %.2f\n", PI); // Imprime o valor de PI com 2 casas decimais
-        
-    system("pause");
+    printf("Valor e: %.1f ", constante);
 
     return 0;
 }

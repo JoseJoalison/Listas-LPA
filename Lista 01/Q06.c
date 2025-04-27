@@ -1,13 +1,17 @@
+// Faça um programa que leia um valor do tipo double e depois o imprima na forma de
+//notação científica.
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    double num = 2.54e+10; // Inicializa um número em notação científica
+int main(){
+
+    double x;
     
-    printf("Valor lido em notação científica: %lf\n", num); // Exibe o número em notação científica
+    printf("Digite um valor: ");
+    scanf("%lf", &x);
 
-    system("pause");
+    printf("O valor e: %E", x);
 
-    return 0; 
+    return 0;
 }

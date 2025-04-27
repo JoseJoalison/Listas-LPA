@@ -1,3 +1,7 @@
+/* Faça um programa que informe o mês de acordo com o número digitado pelo
+usuário. Exemplo: Entrada = 4. Saída = Abril.*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -18,7 +22,7 @@ int main()
         printf("Fevereiro\n");
         break;
     case 3:
-        printf("Março\n");
+        printf("Marco\n");
         break;
     case 4:
         printf("Abril\n");
@@ -48,10 +52,8 @@ int main()
         printf("Dezembro\n");
         break;
     default:
-        printf("Número inválido! Digite um valor entre 1 e 12.\n");
+        printf("Mes inexistente! Digite um valor entre 1 e 12.\n");
     }
-
-    system("pause");
-
+    
     return 0;
 }

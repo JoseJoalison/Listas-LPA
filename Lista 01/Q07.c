@@ -1,16 +1,16 @@
+//Elabore um programa que leia um caractere e depois o imprima como um valor inteiro.
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    int num;
+int main(){
 
-    printf("Digite um número inteiro: ");
-    scanf("%d", &num); // Lê um número inteiro do usuário
+    char x;
+    
+    printf("Digite um valor: ");
+    scanf("%c", &x);
 
-    printf("Número digitado: %d\n", num); // Exibe o número inteiro digitado
+    printf("O valor e: %d", x);
 
-    system("pause");
-
-    return 0; 
+    return 0;
 }

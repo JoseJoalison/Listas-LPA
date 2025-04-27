@@ -1,19 +1,26 @@
+/*Faça um programa que leia três valores inteiros e mostre sua soma*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    int v1 = 4; 
-    int v2 = 5;
-    int v3 = 8;
+    int vlr1, vlr2, vlr3; 
 
-    printf("Número 1: %d\n", v1); // Exibe o primeiro número
-    printf("Número 2: %d\n", v2); // Exibe o segundo número
-    printf("Número 3: %d\n", v3); // Exibe o terceiro número
+    printf("Digite o 1* valor: ");
+    scanf("%d", &vlr1);
 
-    printf("Soma dos números: %d\n", v1 + v2 + v3); // Exibe a soma dos números
+    printf("Digite o 2* valor: ");
+    scanf("%d", &vlr2);
 
-    system("pause");
+    printf("Digite o 3* valor: ");
+    scanf("%d", &vlr3);
+
+    printf("Numero 1: %d\n", vlr1); // Exibe o primeiro número
+    printf("Numero 2: %d\n", vlr2); // Exibe o segundo número
+    printf("Numero 3: %d\n", vlr3); // Exibe o terceiro número
+
+    printf("Soma dos numeros: %d\n", vlr1 + vlr2 + vlr3); // Exibe a soma dos números
 
     return 0;
 }

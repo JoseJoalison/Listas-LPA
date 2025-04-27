@@ -1,16 +1,21 @@
+/*Leia um ângulo em graus e apresente-o convertido em radianos. A fórmula de
+conversão é R = G * π/180, sendo G o ângulo em graus e R em radianos e π = 3.141592*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
     const float pi = 3.141592; // Define o valor de pi
-    float G = 45.0;
-    float R = G * pi / 180.0; // Converte graus para radianos
+    float G, R;
 
-    printf("Ângulo qualquer em graus: %.2f\n", G); // Exibe o ângulo em graus
-    printf("Ângulo qualquer em radianos: %.6f\n", R); // Exibe o ângulo em radianos
+    printf("Digite o angulo em graus: ");
+    scanf("%f", &G);
 
-    system("pause");
+    R = G * pi / 180.0; // Converte graus para radianos
+
+    printf("Angulo qualquer em graus: %.2f\n", G); // Exibe o ângulo em graus
+    printf("Angulo qualquer em radianos: %.6f\n", R); // Exibe o ângulo em radianos
 
     return 0;
 }

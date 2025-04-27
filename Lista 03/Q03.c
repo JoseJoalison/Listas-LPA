@@ -1,3 +1,6 @@
+/*Faça um programa que leia um número inteiro e verifique se esse número é par ou
+ímpar.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,20 +8,18 @@ int main()
 {
     int num;
 
-    printf("Digite um número inteiro: \n");
+    printf("Digite um numero inteiro: ");
     scanf("%d", &num);
 
     if (num % 2 == 0) // Verifica se o número é par
     {
-        printf("O número é par\n");
+        printf("O numero e par\n");
     }
 
     else // Caso contrário
     {
-        printf("O número é ímpar\n");
+        printf("O numero e impar\n");
     }
-
-    system("pause");
 
     return 0;
 }

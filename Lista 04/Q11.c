@@ -1,38 +1,29 @@
+/*Faça um algoritmo que leia um número positivo e imprima seus divisores. Exemplo: Os
+divisores do número 66 são: 1, 2, 3, 6, 11, 22, 33 e 66.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-int main()
-{
-    int valor, soma = 0, count = 0;
-    float media;
+int main() {
+    int num, i;
 
-    printf("Digite 10 números inteiros positivos:\n");
+    printf("Digite um numero positivo: ");
+    scanf("%d", &num);
 
-    for (int i = 1; i <= 10; i++) // Loop de 1 a 10
-    {
-        printf("Número %d: ", i);
-        scanf("%d", &valor);
+    if (num <= 0) {
+        printf("Numero invalido. Digite um numero positivo.\n");
+        return 0;
+    }
 
-        if (valor > 0)  // Ignora números não positivos
-        {
-            soma += valor;
-            count++;  // Conta quantos números positivos foram inseridos
+    printf("Os divisores de %d sao: ", num);
+
+    for (i = 1; i <= num; i++) {
+        if (num % i == 0) {
+            printf("%d ", i);
         }
     }
 
-    if (count > 0) // Verifica se algum número positivo foi digitado
-    {
-        media = soma / (float)count;  // Calcula a média
-        printf("A média dos números positivos digitados é: %.2f\n", media);
-    }
-
-    else // Caso contrário
-    {
-        printf("Nenhum número positivo foi digitado.\n");
-    }
-
-    system("pause");
-    
+    printf("\n");
     return 0;
 }

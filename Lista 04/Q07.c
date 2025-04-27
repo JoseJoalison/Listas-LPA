@@ -1,3 +1,6 @@
+/*Elabore um programa que peça ao usuário para digitar 10 valores. Some esses valores e
+apresente o resultado na tela*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -15,9 +18,7 @@ int main()
         soma += valor; // Adiciona o valor digitado à soma total
     }
 
-    printf("A soma dos 10 valores digitados é: %d\n", soma);
-
-    system("pause");
+    printf("A soma dos 10 valores digitados e: %d\n", soma);
 
     return 0;
 }

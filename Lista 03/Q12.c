@@ -1,3 +1,7 @@
+/*Usando o comando switch, escreva um programa que leia um inteiro entre 1 e 7 e
+imprima o dia da semana correspondente a esse número. Isto é, domingo, se 1,
+segunda-feira, se 2, e assim por diante.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,7 +9,7 @@ int main()
 {
     int dia;
 
-    printf("Digite um número de 1 a 7: ");
+    printf("Digite um numero de 1 a 7: ");
     scanf("%d", &dia);
 
     // Verifica e imprime o dia da semana correspondente
@@ -18,7 +22,7 @@ int main()
         printf("Segunda-feira\n");
         break;
     case 3:
-        printf("Terça-feira\n");
+        printf("Terca-feira\n");
         break;
     case 4:
         printf("Quarta-feira\n");
@@ -30,13 +34,11 @@ int main()
         printf("Sexta-feira\n");
         break;
     case 7:
-        printf("Sábado\n");
+        printf("Sabado\n");
         break;
     default:
-        printf("Número inválido! Digite um valor entre 1 e 7.\n");
+        printf("Dia inexistente! Digite um valor entre 1 e 7.\n");
     }
-
-    system("pause");
 
     return 0;
 }

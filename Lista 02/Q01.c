@@ -1,17 +1,19 @@
+/*Faça um programa que leia um número inteiro e retorne seu antecessor e seu
+sucessor.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    int i = 10;
-    int antes = 9;
-    int depois = 11;
+    int i;
 
-    printf("Número: %d\n", i); // Exibe o número
-    printf("Número antes: %d\n", antes); // Exibe o número antecessor
-    printf("Número depois: %d\n", depois); // Exibe o número sucessor
+    printf("Digite um valor: ");
+    scanf("%d", &i);
 
-    system("pause");
+    printf("Numero: %d\n", i); // Exibe o número
+    printf("Numero antecessor: %d\n", i - 1); // Exibe o número antecessor
+    printf("Numero sucessor: %d\n", i + 1); // Exibe o número sucessor
 
     return 0;
 }

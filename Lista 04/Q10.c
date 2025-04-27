@@ -1,10 +1,13 @@
+/*Faça um programa que leia 10 inteiros positivos, ignorando não positivos, e imprima sua
+média*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
 int main()
 {
-    int valor, soma = 0, count = 0; // Inicializa soma e contador
+    int valor, soma = 0, contador = 0; // Inicializa soma e contador
     float media;
 
     printf("Digite 10 números inteiros positivos:\n");
@@ -17,13 +20,13 @@ int main()
         if (valor > 0) // Ignora números não positivos
         {
             soma += valor;
-            count++; // Conta quantos números positivos foram inseridos
+            contador++; // Conta quantos números positivos foram inseridos
         }
     }
 
-    if (count > 0) // Verifica se algum número positivo foi digitado
+    if (contador > 0) // Verifica se algum número positivo foi digitado
     {
-        media = soma / (float)count; // Calcula a média
+        media = soma / (float)contador; // Calcula a média
         printf("A média dos números positivos digitados é: %.2f\n", media);
     }
 
@@ -31,8 +34,6 @@ int main()
     {
         printf("Nenhum número positivo foi digitado.\n");
     }
-
-    system("pause");
-
+    
     return 0;
 }

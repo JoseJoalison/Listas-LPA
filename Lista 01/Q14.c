@@ -1,16 +1,17 @@
+//Faça um programa que leia três caracteres do tipo char e depois os imprima um em
+//cada linha. Use um único comando printf() para isso
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    char char1, char2, char3;
+int main(){
 
-    printf("Digite três caracteres: \n");
-    scanf("%c %c %c", &char1, &char2, &char3); // Lê três caracteres do usuário
+    char x,y,z;
 
-    printf("Os caracteres são: \n%c\n%c\n%c\n", char1, char2, char3); // Exibe os caracteres lidos cada um em uma linha
+    printf("Digite os caracteres: ");
+    scanf("%c %c %c", &x, &y, &z);
 
-    system("pause");
+    printf("Cararcteres:\n%c\n%c\n%c\n", x, y, z);
 
     return 0;
 }

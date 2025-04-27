@@ -1,32 +1,33 @@
+/*Escreva um programa que leia um número inteiro positivo N e em seguida imprima N
+linhas do chamado triângulo de Floyd*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
 int main()
 {
-    int N;
+    int num, i, j;
     int numero = 1; // O primeiro número a ser impresso
 
-    printf("Digite um número inteiro positivo N: ");
-    scanf("%d", &N);
+    printf("Digite um numero inteiro positivo N: ");
+    scanf("%d", &num);
 
-    if (N <= 0) // Verifica se o número é positivo
+    if (num <= 0) // Verifica se o número é positivo
     {
-        printf("Por favor, digite um número inteiro positivo.\n");
+        printf("Por favor, digite um numero inteiro positivo.\n");
         return 1;
     }
 
-    for (int i = 1; i <= N; i++) // Para cada linha
+    for (i = 1; i <= num; i++) // Para cada linha
     {
-        for (int j = 1; j <= i; j++) // Para cada número na linha
+        for (j = 1; j <= i; j++) // Para cada número na linha
         {
             printf("%d ", numero);
             numero++; // Incrementa o número
         }
         printf("\n"); // Pula para a próxima linha
     }
-
-    system("pause");
 
     return 0;
 }

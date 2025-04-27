@@ -1,3 +1,5 @@
+/*Faça um programa que calcule e mostre a soma dos 50 primeiros números pares*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -15,9 +17,7 @@ int main()
         contador++; // Incrementa o contador
     }
 
-    printf("A soma dos 50 primeiros números pares é: %d\n", soma);
-
-    system("pause");
+    printf("A soma dos 50 primeiros numeros pares e: %d\n", soma);
 
     return 0;
 }

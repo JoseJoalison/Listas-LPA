@@ -1,3 +1,7 @@
+/*Faça um programa que leia um número e, caso ele seja positivo, calcule e mostre:
+• O número digitado ao quadrado.
+• A raiz quadrada do número digitado.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,7 +11,7 @@ int main()
     float resultado_exponenciado;
     float resultado_raiz;
 
-    printf("Digite um número positivo: \n");
+    printf("Digite um numero positivo: ");
     scanf("%f", &num);
 
     if (num > 0) // Verifica se o número é positivo
@@ -20,10 +24,8 @@ int main()
 
     else // Caso contrário
     {
-        printf("O número digitado não é positivo\n");
+        printf("O numero digitado nao e positivo\n");
     }
-
-    system("pause");
 
     return 0;
 }

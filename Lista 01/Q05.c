@@ -1,15 +1,17 @@
+// Faça um programa que leia um valor do tipo float e depois o imprima usando o operador
+//“%d”. Veja o que aconteceu.
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    float num;
+int main(){
 
-    num = 9.5;
+    float x;
     
-    printf("Valor lido: %d\n", num); // Erro de tipo: %d para float (fica em 0)
+    printf("Digite um valor: ");
+    scanf("%f", &x);
 
-    system("pause");
+    printf("O valor e: %d", x);
 
-    return 0; 
+    return 0;
 }

@@ -1,16 +1,17 @@
+//Elabore um programa que solicite ao usuário entrar com o valor do dia, mês e ano
+//(inteiros). Em seguida, imprima os valores lidos separados por uma barra (\)
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    int dia, mes, ano;
+int main(){
 
-    printf("Digite uma data (dd mm aaaa):\n");
-    scanf("%d %d %d", &dia, &mes, &ano); // Lê a data no formato dd mm aaaa
-
-    printf("A data informada foi: %02d/%02d/%04d\n", dia, mes, ano); // Exibe a data no formato dd/mm/aaaa
+    int x,y,z;
     
-    system("pause");
+    printf("Digite a data: ");
+    scanf("%d %d %d", &x, &y, &z);
+
+    printf("A data e: %d \\ %d \\ %d", x, y, z);
 
     return 0;
 }

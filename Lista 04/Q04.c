@@ -1,3 +1,6 @@
+/*Faça um programa que determine e mostre os cinco primeiros múltiplos de 3
+considerando números maiores que 0*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -6,7 +9,7 @@ int main(){
     int contador = 0;
     int numero = 1;
 
-    printf("Os cinco primeiros múltiplos de 3 maiores que 0 são:\n");
+    printf("Os cinco primeiros multiplos de 3 maiores que 0 sao:\n");
 
     while (contador < 5) // Enquanto o contador for menor que 5
     {
@@ -17,8 +20,6 @@ int main(){
         }
         numero++; // Incrementa o número para verificar o próximo
     }
-
-    system("pause");
 
     return 0;
 }

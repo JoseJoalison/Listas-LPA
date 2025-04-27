@@ -1,3 +1,6 @@
+/* Elabore um programa que faça a leitura de vários números inteiros até que se digite um
+número negativo. O programa tem de retornar o maior e o menor número lido.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -7,12 +10,12 @@ int main()
 
     int numero, maior, menor;
 
-    printf("Digite um número inteiro (número negativo para encerrar): ");
+    printf("Digite um numero inteiro (numero negativo para encerrar): ");
     scanf("%d", &numero);
 
     if (numero < 0) // Verifica se o primeiro número é negativo
     {
-        printf("Nenhum número foi digitado.\n");
+        printf("Nenhum numero foi digitado.\n");
         return 0;  // Encerra o programa caso o primeiro número seja negativo
     }
 
@@ -26,14 +29,12 @@ int main()
         if (numero < menor) // Verifica se o número digitado é menor que o menor atual
             menor = numero;  // Atualiza o menor número
 
-        printf("Digite um número inteiro (número negativo para encerrar): ");
+        printf("Digite um numero inteiro (numero negativo para encerrar): ");
         scanf("%d", &numero);
     }
 
-    printf("O maior número digitado foi: %d\n", maior);
-    printf("O menor número digitado foi: %d\n", menor);
+    printf("O maior numero digitado foi: %d\n", maior);
+    printf("O menor numero digitado foi: %d\n", menor);
 
-    system("pause");
-    
     return 0;
 }

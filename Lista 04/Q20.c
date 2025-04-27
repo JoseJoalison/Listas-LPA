@@ -1,41 +1,33 @@
+/*Faça um programa que leia um valor inteiro e positivo N, calcule o mostre o
+valor E, conforme a fórmula a seguir: (1/1!)+(1/2!)+(1/3!)+(1/4!)...*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <limits.h>
+
 
 // Função para calcular o fatorial de um número
-long long fatorial(int n)
-{
-    long long fat = 1;
-    for (int i = 1; i <= n; i++)
-    {
+
+int fatorial(n) {
+    int i, fat = 1;
+    for ( i = 1; i <= n; i++) {
         fat *= i;
     }
     return fat;
 }
 
-int main()
-{
-    int N;
-    double E = 1.0; // O valor inicial de E é 1 (0! = 1)
+int main() {
+    int valor, i;
+    double E = 0.0;
+    
+    printf("Digite o valor: ");
+    scanf("%d", &valor);
 
-    printf("Digite um valor inteiro e positivo N: ");
-    scanf("%d", &N);
-
-    if (N <= 0) // Verifica se o número é positivo
-    {
-        printf("Por favor, digite um número inteiro positivo.\n");
-        return 1;
+    for (i = 1; i <= valor; i++) {
+        E += 1.0 / fatorial(i);
     }
 
-    for (int i = 1; i <= N; i++) // Loop de 1 até N
-    {
-        E += 1.0 / fatorial(i); // Adiciona o valor de 1/i!
-    }
-
-    printf("O valor de E calculado até %d termos é: %.6f\n", N, E);
-
-    system("pause");
+    printf("O valor de E eh: %.6lf\n", E);
 
     return 0;
 }

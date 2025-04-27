@@ -1,31 +1,30 @@
+/*Escreva um programa que leia 10 números e escreva o menor valor lido e o maior valor
+lido.*/
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h> // Para INT_MAX e INT_MIN
 
-int main()
-{
-    int valor;
-    int menor = INT_MAX;
-    int maior = INT_MIN;
+int main() {
+    int numero, maior, menor, i;
 
-    printf("Digite 10 números inteiros:\n");
+    printf("Digite o 1* numero: ");
+    scanf("%d", &numero);
+    maior = menor = numero; // Primeiro número define o inicial
 
-    for (int i = 1; i <= 10; i++) // Loop de 1 a 10
-    {
-        printf("Número %d: ", i);
-        scanf("%d", &valor);
+    for (i = 1; i <= 10; i++) {
+        printf("Digite o %d* numero: ", i);
+        scanf("%d", &numero);
 
-        if (valor < menor) // Verifica se o valor digitado é menor que o menor atual
-            menor = valor;
-
-        else if (valor > maior) // Verifica se o valor digitado é maior que o maior atual
-            maior = valor;
+        if (numero > maior) {
+            maior = numero;
+        }
+        if (numero < menor) {
+            menor = numero;
+        }
     }
 
-    printf("O menor valor digitado foi: %d\n", menor);
-    printf("O maior valor digitado foi: %d\n", maior);
+    printf("\nMaior valor: %d\n", maior);
+    printf("Menor valor: %d\n", menor);
 
-    system("pause");
-    
     return 0;
 }
